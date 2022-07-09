@@ -39,34 +39,46 @@ public class panel2 extends javax.swing.JFrame {
 
         cancelarpaga.setBackground(new java.awt.Color(216, 178, 178));
         cancelarpaga.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        cancelarpaga.setForeground(new java.awt.Color(255, 255, 255));
         cancelarpaga.setText("Volver");
+        cancelarpaga.setBorder(null);
+        cancelarpaga.setBorderPainted(false);
+        cancelarpaga.setContentAreaFilled(false);
         cancelarpaga.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cancelarpagaActionPerformed(evt);
             }
         });
-        getContentPane().add(cancelarpaga, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 540, 120, -1));
+        getContentPane().add(cancelarpaga, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 524, 250, 60));
 
         txtrecibi.setFont(new java.awt.Font("SansSerif", 0, 36)); // NOI18N
+        txtrecibi.setForeground(new java.awt.Color(255, 255, 255));
+        txtrecibi.setText("0");
         getContentPane().add(txtrecibi, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 260, 210, 60));
 
         resultadodelpago1.setFont(new java.awt.Font("sansserif", 0, 36)); // NOI18N
+        resultadodelpago1.setForeground(new java.awt.Color(255, 255, 255));
         resultadodelpago1.setText("S/");
-        getContentPane().add(resultadodelpago1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 400, 190, 70));
+        getContentPane().add(resultadodelpago1, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 400, 40, 70));
 
         txtrecibi2.setFont(new java.awt.Font("sansserif", 0, 36)); // NOI18N
+        txtrecibi2.setForeground(new java.awt.Color(255, 255, 255));
         txtrecibi2.setText("0");
         getContentPane().add(txtrecibi2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 400, 190, 70));
 
         confirmarPaga.setBackground(new java.awt.Color(178, 216, 193));
         confirmarPaga.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
+        confirmarPaga.setForeground(new java.awt.Color(255, 255, 255));
         confirmarPaga.setText("Confirmar");
+        confirmarPaga.setBorder(null);
+        confirmarPaga.setBorderPainted(false);
+        confirmarPaga.setContentAreaFilled(false);
         confirmarPaga.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 confirmarPagaActionPerformed(evt);
             }
         });
-        getContentPane().add(confirmarPaga, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 540, 170, -1));
+        getContentPane().add(confirmarPaga, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 524, 240, 60));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paquete/unknown1.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1146, 630));
@@ -81,7 +93,10 @@ public class panel2 extends javax.swing.JFrame {
     }//GEN-LAST:event_cancelarpagaActionPerformed
 
     private void confirmarPagaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmarPagaActionPerformed
-        
+        // TODO: si se confirma. procesa la transaccion, la agrega a la ddbb y luego regresa a por otro pasajero 
+        this.setVisible(false);
+        programa v=new programa();
+        v.setVisible(true);
     }//GEN-LAST:event_confirmarPagaActionPerformed
 
     /**
