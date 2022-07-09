@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package paquete;
-
+import connection.Connect;
 /**
  *
  * @author Jonat
@@ -94,6 +94,9 @@ public class panel2 extends javax.swing.JFrame {
 
     private void confirmarPagaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_confirmarPagaActionPerformed
         // TODO: si se confirma. procesa la transaccion, la agrega a la ddbb y luego regresa a por otro pasajero 
+        int cantidadPasajeros = programa.contador;
+        float pasajeEstandar = programa.pasajeEstandar;
+        Connect.insertPasaje(cantidadPasajeros, pasajeEstandar);
         this.setVisible(false);
         programa v=new programa();
         v.setVisible(true);
