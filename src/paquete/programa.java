@@ -4,6 +4,8 @@
  */
 package paquete;
 
+
+ import AppPackage.AnimationClass;
 /**
  *
  * @author Jonat
@@ -31,6 +33,13 @@ public class programa extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        paneltres = new javax.swing.JLabel();
+        paneldos = new javax.swing.JLabel();
+        botondebotones = new javax.swing.JLabel();
+        botonadmin2 = new javax.swing.JLabel();
+        botonadmin1 = new javax.swing.JLabel();
+        botonadmin = new javax.swing.JLabel();
+        botonpanel1 = new javax.swing.JLabel();
         click2 = new javax.swing.JButton();
         click1 = new javax.swing.JButton();
         resultadodelpago = new javax.swing.JLabel();
@@ -42,6 +51,52 @@ public class programa extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        paneltres.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paquete/Sin título-6.png"))); // NOI18N
+        paneltres.setText("jLabel2");
+        getContentPane().add(paneltres, new org.netbeans.lib.awtextra.AbsoluteConstraints(-340, 150, 350, 480));
+
+        paneldos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paquete/Sin título-6.png"))); // NOI18N
+        paneldos.setText("jLabel2");
+        getContentPane().add(paneldos, new org.netbeans.lib.awtextra.AbsoluteConstraints(-340, 150, 350, 480));
+
+        botondebotones.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        botondebotones.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paquete/Sin título-7.png"))); // NOI18N
+        botondebotones.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botondebotonesMouseClicked(evt);
+            }
+        });
+        getContentPane().add(botondebotones, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 140, 20));
+
+        botonadmin2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paquete/imagen_2022-07-09_131154609-removebg-preview.png"))); // NOI18N
+        botonadmin2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botonadmin2MouseClicked(evt);
+            }
+        });
+        getContentPane().add(botonadmin2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 45, 80, 70));
+
+        botonadmin1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paquete/imagen_2022-07-09_131154609-removebg-preview.png"))); // NOI18N
+        botonadmin1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botonadmin1MouseClicked(evt);
+            }
+        });
+        getContentPane().add(botonadmin1, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 45, 80, 70));
+
+        botonadmin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paquete/imagen_2022-07-09_131154609-removebg-preview.png"))); // NOI18N
+        botonadmin.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                botonadminMouseClicked(evt);
+            }
+        });
+        getContentPane().add(botonadmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 45, 80, 70));
+
+        botonpanel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paquete/Sin título-5.png"))); // NOI18N
+        botonpanel1.setLabelFor(resultadodelpago1);
+        botonpanel1.setText("jLabel2");
+        getContentPane().add(botonpanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, 340, 480));
 
         click2.setBackground(new java.awt.Color(178, 203, 216));
         click2.setFont(new java.awt.Font("sansserif", 3, 48)); // NOI18N
@@ -57,7 +112,7 @@ public class programa extends javax.swing.JFrame {
                 click2ActionPerformed(evt);
             }
         });
-        getContentPane().add(click2, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 200, 130, 140));
+        getContentPane().add(click2, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 200, 140, 140));
 
         click1.setBackground(new java.awt.Color(178, 203, 216));
         click1.setFont(new java.awt.Font("sansserif", 3, 48)); // NOI18N
@@ -73,7 +128,7 @@ public class programa extends javax.swing.JFrame {
                 click1ActionPerformed(evt);
             }
         });
-        getContentPane().add(click1, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 200, 130, 140));
+        getContentPane().add(click1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 200, 140, 140));
 
         resultadodelpago.setFont(new java.awt.Font("sansserif", 0, 36)); // NOI18N
         resultadodelpago.setForeground(new java.awt.Color(255, 255, 255));
@@ -88,7 +143,7 @@ public class programa extends javax.swing.JFrame {
         cantidaddepasajeros1.setFont(new java.awt.Font("sansserif", 0, 36)); // NOI18N
         cantidaddepasajeros1.setForeground(new java.awt.Color(255, 255, 255));
         cantidaddepasajeros1.setText("0");
-        getContentPane().add(cantidaddepasajeros1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 250, 140, 70));
+        getContentPane().add(cantidaddepasajeros1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 250, 140, 70));
 
         cancelarpaga.setBackground(new java.awt.Color(216, 178, 178));
         cancelarpaga.setFont(new java.awt.Font("sansserif", 1, 18)); // NOI18N
@@ -119,7 +174,7 @@ public class programa extends javax.swing.JFrame {
         getContentPane().add(confirmarPaga, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 514, 260, 60));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/paquete/unknown.png"))); // NOI18N
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1140, 640));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1150, 640));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -166,6 +221,75 @@ public class programa extends javax.swing.JFrame {
         refreshInterface();
     }//GEN-LAST:event_cancelarpagaActionPerformed
 
+    private void botonadminMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonadminMouseClicked
+
+        //panel mostrado
+        AnimationClass  botonadminuno = new AnimationClass();
+        botonadminuno.jLabelXRight(-340, 10, 10, 5, botonpanel1);
+        
+        //paneles ocultos
+        AnimationClass  botonadminun = new AnimationClass();
+        botonadminun.jLabelXLeft(10, -340, 10, 5, paneldos);
+        
+        AnimationClass  botonadminunn = new AnimationClass();
+        botonadminunn.jLabelXLeft(10, -340, 10, 5, paneltres); 
+    }//GEN-LAST:event_botonadminMouseClicked
+
+    private void botondebotonesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botondebotonesMouseClicked
+        
+        AnimationClass botondebotoness = new AnimationClass();
+        botondebotoness.jLabelYDown(-80, 45, 10, 5, botonadmin);
+        
+        AnimationClass botondebotoness1 = new AnimationClass();
+        botondebotoness1.jLabelYDown(-80, 45, 10, 5, botonadmin1);
+        
+        AnimationClass botondebotoness2 = new AnimationClass();
+        botondebotoness2.jLabelYDown(-80, 45, 10, 5, botonadmin2);
+        
+        // ^^ bajar  | vv subir
+        
+        AnimationClass botondebotonesss = new AnimationClass();
+        botondebotonesss.jLabelYUp(45, -80, 10, 5, botonadmin);
+        
+        AnimationClass botondebotonesss1 = new AnimationClass();
+        botondebotonesss.jLabelYUp(45, -80, 10, 5, botonadmin1);
+        
+        AnimationClass botondebotonesss2 = new AnimationClass();
+        botondebotonesss.jLabelYUp(45, -80, 10, 5, botonadmin2);
+        
+    }//GEN-LAST:event_botondebotonesMouseClicked
+
+    private void botonadmin1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonadmin1MouseClicked
+        
+        //paneles mostrado
+        AnimationClass  botona = new AnimationClass();
+        botona.jLabelXRight(-340, 10, 10, 5, paneldos);
+        
+        //paneles ocultos
+        AnimationClass  botonadminun = new AnimationClass();
+        botonadminun.jLabelXLeft(10, -340, 10, 5, botonpanel1);
+        
+        AnimationClass  botonadminunn = new AnimationClass();
+        botonadminunn.jLabelXLeft(10, -340, 10, 5, paneltres); 
+         
+        
+    }//GEN-LAST:event_botonadmin1MouseClicked
+
+    private void botonadmin2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonadmin2MouseClicked
+       
+        //paneles mostrado
+        AnimationClass  botonadminunn = new AnimationClass();
+        botonadminunn.jLabelXRight(-340, 10, 10, 5, paneltres); 
+        
+        
+        //paneles ocultos
+        AnimationClass  botonadminun = new AnimationClass();
+        botonadminun.jLabelXLeft(10, -340, 10, 5, botonpanel1);
+        
+        AnimationClass  botonadminunnn = new AnimationClass();
+        botonadminunnn.jLabelXLeft(10, -340, 10, 5, paneldos);
+    }//GEN-LAST:event_botonadmin2MouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -202,12 +326,19 @@ public class programa extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel botonadmin;
+    private javax.swing.JLabel botonadmin1;
+    private javax.swing.JLabel botonadmin2;
+    private javax.swing.JLabel botondebotones;
+    private javax.swing.JLabel botonpanel1;
     private javax.swing.JButton cancelarpaga;
     public static javax.swing.JLabel cantidaddepasajeros1;
     private javax.swing.JButton click1;
     private javax.swing.JButton click2;
     private javax.swing.JButton confirmarPaga;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel paneldos;
+    private javax.swing.JLabel paneltres;
     public static javax.swing.JLabel resultadodelpago;
     private javax.swing.JLabel resultadodelpago1;
     // End of variables declaration//GEN-END:variables
